@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/node": "^22",
     "ava": "^8",
-    "typescript": "^5"
+    "typescript": "^7"
   },
   "ava": {
     "files": [
