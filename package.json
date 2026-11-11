@@ -14,7 +14,6 @@
   "devDependencies": {
     "@types/node": "^22",
     "ava": "^8",
-    "tsx": "^4.23.15",
     "typescript": "^5"
   },
   "ava": {
@@ -23,9 +22,6 @@
     ],
     "extensions": [
       "ts"
-    ],
-    "nodeArguments": [
-      "--import=tsx/esm"
     ]
   }
 }
