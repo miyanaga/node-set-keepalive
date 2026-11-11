@@ -6,16 +6,26 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "tsc",
-    "test": "ava-ts -v test/test.ts",
-    "watch": "ava-ts -vw test/test.ts"
+    "test": "ava -v",
+    "watch": "ava -vw"
   },
   "repository": "miyanaga/node-set-keepalive",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^12.12.5",
-    "ava": "^2.4.0",
-    "ava-ts": "^0.25.2",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "@types/node": "^22",
+    "ava": "^8",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.ts"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "nodeArguments": [
+      "--import=tsx/esm"
+    ]
   }
 }

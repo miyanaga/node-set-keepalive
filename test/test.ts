@@ -1,5 +1,5 @@
 import test from 'ava'
-import * as Keepalive from '../src'
+import * as Keepalive from '../src/index.ts'
 
 const delay = async (ms: number) => new Promise(r => setTimeout(r, ms))
 const DU = parseInt(process.env.DURATION_UNIT || '50')
